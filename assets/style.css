@@ -1,0 +1,128 @@
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: blue;
+}
+
+
+.container {
+  width: 500px;
+  padding: 28px 0 30px;
+  margin:auto;
+  border-radius: 10px;
+  margin-top: 200px;
+  background: white;
+}
+
+.input {
+    height: 50px;
+    width: 80%;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 50px;
+    border: dashed skyblue 2px;
+
+    outline: none;
+    
+  }
+::-webkit-input-placeholder{
+  color: rgba(29, 21, 21, 0.308);
+}
+
+
+.controls,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  padding: 50px;
+}
+
+.filters span {
+  margin-right: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+
+.controls .clear-btn {
+  border: none;
+  background: blue;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding:  10px;
+  border-radius: 6px;
+}
+
+.box {
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 0 20px 10px 25px;
+}
+
+.box.overflow {
+  overflow: scroll;
+  
+}
+
+.box .checktik {
+  padding-bottom: 20px;
+  margin: 15px;
+  align-items: flex-start;
+}
+
+
+
+.box .checktik label {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
+
+.checktik label p.checked {
+  text-decoration: line-through;
+}
+
+.box .settings {
+  position: relative;
+}
+
+.settings .change_order {
+  right: -10px;
+  bottom: -50px;
+  padding: 7px;
+  background: white;
+  position: absolute;
+  transform: scale(0);
+}
+
+
+
+.change_order.show {
+  transform: scale(1);
+}
+
+.change_order li {
+  
+  padding: 17px 15px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
